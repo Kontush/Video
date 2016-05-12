@@ -1,0 +1,351 @@
+.work {
+    
+    background: url('@{dir}work.jpg') no-repeat top center;
+    background-size: cover;
+    min-height: 1231px;
+    @media @mobile {
+        padding-top: 30px; 
+        min-height: 1231px;   
+    }
+    @media @desktop {  
+        padding-top: 60px;   
+        min-height: auto;  
+    }
+    @media @desktop-xl {  
+        padding-top: 30px; 
+        min-height: 1231px; 
+    }  
+    h2 {
+        @media @mobile {
+            font-size: 25px;
+        }
+        @media @tablet { 
+            font-size: 50px;
+        }
+    }
+    .row {
+        position: relative;
+        
+        @media @mobile {
+            padding: 30px 1px 30px;
+        }
+        @media @tablet { 
+            padding: 30px 102px 60px;        
+        }
+        @media @desktop {  
+            padding: 65px 75px 60px;
+        }
+        @media @desktop-xl {  
+            padding: 30px 102px 60px;
+        }  
+    }
+    &__item {
+        position: relative;
+        padding: 0;
+        background: #fdbf67;
+        
+        z-index: 1;
+        @media @mobile {
+            margin-bottom: 40px;
+            }
+        @media @tablet { 
+            margin-bottom: 85px;     
+        }
+
+        &-block {
+            display: inline-block;
+            vertical-align: top;
+           
+            padding: 25px 15px 0 20px;
+            @media @mobile {
+                 width: 48%;
+                }
+            @media @tablet { 
+                 width: 48%;       
+            }
+            @media @desktop {  
+                 width: 44%;
+            }
+            @media @desktop-xl {  
+                 width: 48%;
+            }  
+
+            h3 {
+                
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+                padding-left: 5px;
+                @media @mobile {
+                    font-size: 14px;
+                }
+                @media @tablet { 
+                    font-size: 18px;
+                }
+                @media @desktop {  
+                    font-size: 15px;
+                }
+                @media @desktop-xl {  
+                    font-size: 18px;
+                }   
+            }
+            .font {
+                
+                @media @mobile {
+                    font-size: 13px;
+                }
+                @media @tablet { 
+                    font-size: 16px;
+                }
+                @media @desktop {  
+                    font-size: 14px;
+                }
+                @media @desktop-xl {  
+                    font-size: 16px;
+                }   
+            }
+            p {
+                
+                font-weight: 400;
+                color: #48361d;
+                @media @mobile {
+                    font-size: 13px;
+                }
+                @media @tablet { 
+                    font-size: 14px;
+                }
+                @media @desktop {  
+                    font-size: 13px;
+                }
+                @media @desktop-xl {  
+                    font-size: 14px;
+                } 
+                  
+            }
+            .text {
+                @media @mobile {
+                    font-size: 13px;
+                }
+                @media @tablet { 
+                    font-size: 16px;
+                }
+                @media @desktop {  
+                    font-size: 14px;
+                }
+                @media @desktop-xl {  
+                    font-size: 16px;
+                }   
+            }
+
+        }
+        .number {
+            position: absolute;
+            width: 46px;
+            height: 46px;
+            background: #fc9401;
+            border: 3px solid #fff;
+            border-radius: 50%;
+            
+            p {
+                font-size: 33px;
+                font-weight: 700;
+                
+                margin-top: -2px;
+            }
+        }
+        .line {
+            position: absolute;
+            right: -176px;
+            top: -1px;
+            z-index: -1;
+            @media @mobile {  
+                display: none;
+            }
+            @media @desktop-xl {  
+                display: block;
+            }
+        }
+    }
+    &__item-left {
+        
+        
+        @media @mobile {
+            width: 320px;
+            height: 220px; 
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+        @media @tablet { 
+            width: 395px;
+            height: 220px;  
+            
+            margin-bottom: 50px;         
+        }
+        @media @desktop {  
+            width: 368px;
+            height: 220px;
+            margin: 0;
+            margin-right: 50px;
+            margin-bottom: 85px; 
+        }
+        @media @desktop-xl {  
+            width: 395px;
+            height: 220px;
+            margin-right: 165px;
+        }   
+        .work__item-img {
+            display: inline-block;
+            vertical-align: top;
+            
+            @media @mobile {
+                width: 50.7%;
+            }
+            @media @tablet { 
+                width: 50.7%;
+            }
+            @media @desktop {  
+                width: 54.3%;
+            }
+            @media @desktop-xl {  
+                width: 50.7%;
+            }   
+            img {
+                width: 100%;
+            }
+        }
+        .number {
+            
+            @media @mobile {
+                right: 0px; 
+                top: -22px;
+            }
+            @media @tablet { 
+                right: -19px; 
+                top: -22px;
+            }
+           p {
+                padding-left: 11px;
+           }
+        }
+    }
+    &__item-right {
+        
+        @media @mobile {
+            width: 320px;
+            height: 220px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+        @media @tablet { 
+            width: 402px;
+            height: 220px;
+            
+            margin-bottom: 50px;
+        }
+        @media @desktop {  
+            width: 373px;
+            height: 220px;
+            margin: 0;
+            margin-bottom: 80px;
+
+        }
+        @media @desktop-xl {  
+            width: 402px;
+            height: 220px;
+        }   
+        
+        .work__item-img {
+            display: inline-block;
+            vertical-align: top;
+            
+            @media @mobile {
+                width: 50%;
+            }
+            @media @tablet { 
+                width: 50%;
+            }
+            @media @desktop {  
+                width: 53.7%;
+            }
+            @media @desktop-xl {  
+                width: 50%;
+            }   
+            img {
+                width: 100%;
+            }
+        }
+        .number {
+            
+            @media @mobile {
+                left: 0px; 
+                top: -22px;
+            }
+            @media @tablet { 
+                left: -19px; 
+                top: -22px;
+            }
+           p {
+                padding-left: 10px;
+           }
+        }  
+    }
+    &__item-2 {
+        @media @mobile {
+            
+        }
+        @media @tablet { 
+            
+        }
+        @media @desktop {  
+            
+        }
+        @media @desktop-xl {  
+            position: absolute;
+            right: 97px;
+            top: 173px;
+        }    
+    }
+    &__item-3 {
+        @media @desktop-xl {  
+            margin-top: 10px;
+        }
+    }
+    &__item-4 {
+        @media @mobile {
+            
+        }
+        @media @tablet { 
+            
+        }
+        @media @desktop {  
+            
+        }
+        @media @desktop-xl {  
+            position: absolute;
+            right: 97px;
+            top: 512px;
+        }    
+    }
+    &__item-5 {
+        @media @desktop-xl {  
+            margin-top: 10px;
+        }
+    }
+    &__item-6 {
+        @media @mobile {
+            
+        }
+        @media @tablet { 
+            
+        }
+        @media @desktop {  
+            
+        }
+        @media @desktop-xl {  
+            position: absolute;
+            right: 97px;
+            top: 824px;
+        }    
+    }
+    
+}
