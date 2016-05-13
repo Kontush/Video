@@ -162,6 +162,12 @@
                 background-image: -ms-linear-gradient(bottom, rgba(0,0,0,.15), rgba(255,255,255,.15));
                 background-image: linear-gradient(to top, rgba(0,0,0,.15), rgba(255,255,255,.15));
                 margin-left: 51px;
+                &:hover {
+                    background-image: linear-gradient(to bottom, rgba(0,0,0,.15), rgba(255,255,255,.15));
+                    span {
+                        background-image: linear-gradient(to bottom, rgba(0,0,0,.15), rgba(255,255,255,.15));
+                    }
+                }
                 
                 @media @mobile {
                     width: 248px;

@@ -10,9 +10,26 @@
     @media @tablet {  
     background: url('@{dir}after-header-bg.jpg') no-repeat top center;
     }
-    @media @desktop {  
-        
-
+    .container {
+        position: relative;
+    }
+    .language {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        &__item {
+            display: inline-block;
+            width: 40px;
+            height: 26px;
+            font-size: 18px;
+            color: #fc9401;
+            text-align: center;
+            border-radius: 20px;
+        }
+        .active {
+            color: #fff;
+            background: #fc9401;
+        }
     }
    &__img {
         img {
@@ -107,6 +124,12 @@
             background-image: -o-linear-gradient(bottom, rgba(0,0,0,.15), rgba(255,255,255,.15));
             background-image: -ms-linear-gradient(bottom, rgba(0,0,0,.15), rgba(255,255,255,.15));
             background-image: linear-gradient(to top, rgba(0,0,0,.15), rgba(255,255,255,.15));
+            &:hover {
+                background-image: linear-gradient(to bottom, rgba(0,0,0,.15), rgba(255,255,255,.15));
+                span {
+                    background-image: linear-gradient(to bottom, rgba(0,0,0,.15), rgba(255,255,255,.15));
+                }
+            }
             @media @mobile {
                 width: 248px;
                 height: 46px;
@@ -148,7 +171,6 @@
                 background-image: -o-linear-gradient(bottom, rgba(0,0,0,.15), rgba(255,255,255,.15));
                 background-image: -ms-linear-gradient(bottom, rgba(0,0,0,.15), rgba(255,255,255,.15));
                 background-image: linear-gradient(to top, rgba(0,0,0,.15), rgba(255,255,255,.15));
-                
             }
         }
    }

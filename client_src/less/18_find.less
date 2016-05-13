@@ -1,0 +1,178 @@
+.find {
+    
+    background: url('@{dir}find.jpg') no-repeat top center;
+    background-size: cover;
+    
+    border-bottom: 3px solid #fc9401;
+    @media @mobile {
+        padding: 20px 0;
+        margin-top: 20px;
+
+    }
+    @media @tablet { 
+        
+    }
+    @media @desktop {  
+        padding: 50px 0;
+        margin-top: 50px;
+    }
+    &__item {
+        &-map {
+            
+            @media @mobile {
+                width: 315px;
+                
+                margin: 0 auto;
+                margin-top: 20px;
+
+            }
+            @media @tablet { 
+                width: 670px;
+                
+            }
+            @media @desktop {  
+
+                margin: 0;
+                width: 500px;
+                height: 475px;
+            }
+            @media @desktop-xl {  
+                width: 670px;
+                height: 475px;
+            }
+            .map {
+                @media @mobile {
+                    height: 400px;
+                }
+                @media @tablet { 
+                    height: 475px;
+                }
+            }
+            .overlay {
+                background:transparent; 
+                position:relative; 
+                width:100%;
+                top: 475px;
+                margin-top:-475px;
+                height: 475px;
+            }
+            .overlay2 {
+                background:transparent; 
+                position:relative; 
+                width:100%;
+                top: 475px;
+                margin-top:-475px;
+                height: 475px;
+            }
+        }
+        &-mail {
+            
+            @media @desktop {  
+                margin-left: 60px;
+            }
+            @media @desktop-xl {
+                margin-left: 30px;
+            }
+            
+            h2 {
+                margin-bottom: 20px;
+
+                @media @mobile {
+                    margin-top: 20px;
+                    font-size: 32px;
+                }
+                @media @tablet { 
+                    
+                    font-size: 40px;
+                }
+                @media @desktop {  
+                    margin-top: 0;
+                    text-align: left;
+                }
+                @media @desktop-xl {  
+                    
+
+                }
+            }
+            .mail {
+                @media @mobile {
+                    margin-left: 20%;
+                }
+                @media @tablet { 
+                   
+                }
+                @media @desktop {  
+                    margin-left: 0;
+                }
+                li {
+                    font-size: 15px;
+                    padding-left: 40px;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                    span {
+                        display: block;
+                        font-size: 22px;
+                        
+                    }
+                }
+                &__first {
+                    background: url('@{dir}mail-1.jpg') no-repeat left center;
+                }
+                &__second {
+                    background: url('@{dir}mail-2.jpg') no-repeat left center;
+                }
+                &__three {
+                    background: url('@{dir}mail-3.jpg') no-repeat left center;
+                    a {
+                        color: #0e75cc;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .gallery {
+                @media @mobile {
+                    width: 300px;
+                    margin: 0 auto;
+                }
+                @media @tablet { 
+                    width: 400px;
+                    
+                }
+                @media @desktop {  
+                    margin-left: 0;
+                }
+                @media @desktop-xl {   
+
+                }
+                li {
+                    
+                    display: inline-block;
+                    vertical-align: top;
+                    
+                    @media @mobile {
+                        width: 30%;
+                        margin-top: 30px;
+                        margin-right: 11px;
+                    }
+                    @media @tablet { 
+                        margin-right: 10px;
+                       
+                    }
+                    @media @desktop {  
+                        width: 30%;
+                        margin-top: 66px;
+                    }
+                    @media @desktop-xl {   
+
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

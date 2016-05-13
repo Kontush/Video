@@ -1,0 +1,106 @@
+.footer {
+    padding-top: 16px;
+
+    &__logo {
+        @media @mobile {
+            text-align: center;
+        }
+        @media @tablet {
+            
+        }
+        @media @desktop {
+           text-align: left;
+        }
+        img {
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            -ms-filter: grayscale(100%);
+            -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+            filter: url(grayscale.svg); /* Firefox 4+ */
+            &:hover {
+            cursor: pointer;
+            -webkit-filter: grayscale(0);
+            -moz-filter: grayscale(0);
+            -ms-filter: grayscale(0);
+            -o-filter: grayscale(0);
+            filter: grayscale(0);   
+            }
+        }
+        p {
+            display: inline-block;
+            vertical-align: top;
+            font-size: 13px;
+            font-weight: 400;
+            color: #878787;
+            margin-left: 15px;
+            padding-top: 32px;
+            @media @mobile {
+                padding-top: 15px;
+            }
+            @media @tablet {
+                padding-top: 32px;
+            }
+            @media @desktop {
+               padding-top: 32px;
+            }
+        }
+
+    }
+    &__item {
+        
+        @media @mobile {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        @media @tablet {
+            margin-bottom: 21px;
+        }
+        @media @desktop {
+           text-align: left;
+           margin-bottom: 21px;
+        }
+        p {
+            font-size: 13px;
+            font-weight: 400;
+            color: #878787;
+            
+            @media @mobile {
+                padding-top: 15px;
+            }
+            @media @tablet {
+                padding-top: 32px;
+            }
+            @media @desktop {
+               
+            }
+
+        }
+        
+    }
+    &__studio {
+        @media @mobile {
+            text-align: center;
+        }
+        @media @tablet {
+            
+        }
+        @media @desktop {
+           
+        }
+        @media @desktop-xl {
+            margin-top: 32px;
+            padding-left: 15px;
+            text-align: left;
+        }
+        p {
+            font-size: 14px;
+            color: #878787;
+            img {
+                width: 167px;
+                height: 26px;
+                margin-top: 10px;
+            }
+        }
+    }
+}

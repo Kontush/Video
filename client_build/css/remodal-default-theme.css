@@ -92,8 +92,8 @@
 
 .remodal-close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 3px;
+  right: 3px;
 
   display: block;
   overflow: visible;
@@ -108,7 +108,7 @@
   transition: color 0.2s;
   text-decoration: none;
 
-  color: #446e66;
+  color: #838080;
   border: 0;
   outline: 0;
   background: transparent;
@@ -116,13 +116,13 @@
 
 .remodal-close:hover,
 .remodal-close:focus {
-  color: #2b2e38;
+  color: #6b6b6b;
 }
 
 .remodal-close:before {
   font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif !important;
-  font-size: 30px;
-  font-weight: 400;
+  font-size: 44px;
+  font-weight: 700;
   line-height: 35px;
 
   position: absolute;
@@ -293,19 +293,9 @@
 /* Media queries
    ========================================================================== */
 
-@media only screen and (min-width: 320px) {
-  .remodal {
-    max-width: 389px;
-  }
-}
+
 
 /* IE8
    ========================================================================== */
 
-.lt-ie9 .remodal-overlay {
-  background: #fff;
-}
 
-.lt-ie9 .remodal {
-  width: 389px;
-}

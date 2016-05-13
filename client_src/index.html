@@ -15,6 +15,9 @@
     
     
 	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/remodal.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
  
 
     
@@ -36,14 +39,19 @@
             <div class="header__phone">
                 <p class="header__phone-bg">+38 (099) 200-75-44, </p>
                 <p>(067) 200-76-44</p>
-                <a href="" class="">Зателефонуйте мені →</a>
+                <a href="#" data-remodal-target="modal-call-back" class="">Зателефонуйте мені →</a>
             </div>
         </div>
 	</header>
 
     <section class="after-header">
         <div class="container">
+            <div class="language">
+                <a href="index.html" class="language__item  active">Укр</a>
+                <a href="index-ru.html" class="language__item">Рус</a>
+            </div>
             <div class="row">
+                
                 <div class="hidden-xs hidden-sm col-md-6 col-lg-6 after-header__img">
                     <img src="images/after-header.png" alt="">
                 </div>
@@ -51,7 +59,7 @@
                     <h1>Встановлення<br><b style="font-weight: 700; ">відеоспостереження</b><br>будь-якої складності</h1>
                     <p class="for"> для будинку, офісу, магазину, складу</p>
                     <p class="where">в Чернівцях та області</p>
-                    <a href="" class="btn btn-orange btn-first">Отримати безкоштовну консультацію<span><img src="images/btn.png" alt=""></span></a>
+                    <a href="" data-remodal-target="modal-call-back" class="btn btn-orange btn-first">Отримати безкоштовну консультацію<span><img src="images/btn.png" alt=""></span></a>
                 </div>
             </div>
         </div>
@@ -74,7 +82,7 @@
                             <li>– On-line спостереження під час відпустки або віжрядження</li>
                             <li>– Перегляд відеозаписів у разі надзвичайної події</li>
                         </ul>
-                        <a href="" class="btn btn-two"><span><img src="images/btn.png" alt=""></span>Замовити відеоспостереження</a>
+                        <a href=""  data-remodal-target="modal-call-back"class="btn btn-two"><span><img src="images/btn.png" alt=""></span>Замовити відеоспостереження</a>
                     
                 </div>
             </div>
@@ -94,7 +102,7 @@
                                 <li>– Скорочення особистих розмов по телефону</li>
                                 <li>– On-line спостереження за виконанням задач</li>
                             </ul>
-                            <a href="" class="btn btn-two"><span><img src="images/btn.png" alt=""></span>Замовити відеоспостереження</a>
+                            <a href="" data-remodal-target="modal-call-back" class="btn btn-two"><span><img src="images/btn.png" alt=""></span>Замовити відеоспостереження</a>
                         
                     </div>
                 </div>
@@ -114,7 +122,7 @@
                             <li>– Виявлення недобросовісного персоналу</li>
                             <li>– Наявність відеозапису в спірних ситуаціях</li>
                         </ul>
-                        <a href="" class="btn btn-two"><span><img src="images/btn.png" alt=""></span>Замовити відеоспостереження</a>
+                        <a href="" data-remodal-target="modal-call-back" class="btn btn-two"><span><img src="images/btn.png" alt=""></span>Замовити відеоспостереження</a>
                     
                 </div>
             </div>
@@ -134,7 +142,7 @@
                                 <li>– Контроль доступу сторонніх осіб на територію</li>
                                 <li>– Дотримання правил зберігання та складування</li>
                             </ul>
-                            <a href="" class="btn btn-two"><span><img src="images/btn.png" alt=""></span>Замовити відеоспостереження</a>
+                            <a href=""  data-remodal-target="modal-call-back" class="btn btn-two"><span><img src="images/btn.png" alt=""></span>Замовити відеоспостереження</a>
                         
                     </div>
                 </div>
@@ -154,7 +162,12 @@
                         <p class="gift">в подарунок</p>
                         <p class="shares">до кінця акції залишилось:</p>
                         <div class="timer">
-                            <script src="http://megatimer.ru/s/da74426096b0d5b1b251c89189cbcce1.js"></script>
+                            <script src="http://megatimer.ru/s/294f60116c7580e8ac1cc1f0a0954918.js"></script>
+                            <ul>
+                                <li>годин</li>
+                                <li>хвилин</li>
+                                <li>секунд</li>
+                            </ul>
                         </div>
                         
                         <img src="images/timer-img.png" alt="">
@@ -188,6 +201,8 @@
             </div>
         </div>
     </section>
+
+
 
     <section class="why">
         <div class="container">
@@ -255,49 +270,50 @@
                     <img src="images/decision-img-1.png" alt="">
                     <div class="decision__item-block">
                         <h3>економ</h3>
-                        <h4><span>Аналоговий відеонагляд</span><br>Відноситься саме до бюджетного класу, тому має низьку вартість обладняння та якісне зображення на виході</h4>
+                        <h4><span>Аналоговий відеонагляд</span><br>Відноситься саме до бюджетного класу, тому має низьку вартість обладняння та якісне зображення на виході.</h4>
                         <ul>
-                            <li>— простота використання</li>
-                            <li>— високий ступінь надійності</li>
-                            <li>— безперебійне та стабільне функціонування пристрою</li>
-                            <li>— віддалений доступ через інтернет</li>
+                            <li>— простота використання;</li>
+                            <li>— високий ступінь надійності;</li>
+                            <li>— безперебійне та стабільне функціонування пристрою;</li>
+                            <li>— віддалений доступ через інтернет;</li>
+                            <li>— цілком низька вартість.</li>
                         </ul>
                         <h5>від <span>10500</span> грн.</h5>
                         
                     </div>
-                    <a href="" class="btn btn-decision">Замовити відеоспостереження</a> 
+                    <a href="" data-remodal-target="modal-call-back" class="btn btn-decision">Замовити відеоспостереження</a> 
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 decision__item decision__item-1">
                     <img src="images/decision-img-2.png" alt="">
                     <div class="decision__item-block">
                         <h3>стандарт</h3>
-                        <h4><span>AHD відеонагляд</span><br>Відноситься саме до бюджетного класу, тому має низьку вартість обладняння та якісне зображення на виході</h4>
+                        <h4><span>AHD відеонагляд</span><br>Надсучасний стандарт, що дозволить отримати відмінну якість при низькій вартості і мінімальних зусиллях при установці.</h4>
                         <ul>
-                            <li>— простота використання</li>
-                            <li>— високий ступінь надійності</li>
-                            <li>— безперебійне та стабільне функціонування пристрою</li>
-                            <li>— віддалений доступ через інтернет</li>
+                            <li>— висока якість зображення;</li>
+                            <li>— нескладне та надійне з'єднання;</li>
+                            <li>— велика відстань передачі даних;</li>
+                            <li>— універсальна сумісність обладнання.</li>
                         </ul>
-                        <h5>від <span>30500</span> грн.</h5>
+                        <h5 class="margine">від <span>30500</span> грн.</h5>
                         
                     </div>
-                    <a href="" class="btn btn-decision">Замовити відеоспостереження</a>
+                    <a href="" data-remodal-target="modal-call-back" class="btn btn-decision">Замовити відеоспостереження</a>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 decision__item decision__item-2">
                     <img src="images/decision-img-3.png" alt="">
                     <div class="decision__item-block">
                         <h3>преміум</h3>
-                        <h4><span>IP відеонагляд</span><br>Відноситься саме до бюджетного класу, тому має низьку вартість обладняння та якісне зображення на виході</h4>
+                        <h4><span>IP відеонагляд</span><br>Це новітня система, побудована на відеосервері та мережевих відеокамерах, які здатні проводити зйомку високої якості, передачу сигналу тривоги, ідентифікацію.</h4>
                         <ul>
-                            <li>— простота використання</li>
-                            <li>— високий ступінь надійності</li>
-                            <li>— безперебійне та стабільне функціонування пристрою</li>
-                            <li>— віддалений доступ через інтернет</li>
+                            <li>— зручність використання;</li>
+                            <li>— висока роздільна здатність;</li>
+                            <li>— легке та швидке встановлення обладнання;</li>
+                            <li>— необмежений доступ.</li>
                         </ul>
                         <h5>від <span>50500</span> грн.</h5>
                         
                     </div>
-                    <a href="" class="btn btn-decision">Замовити відеоспостереження</a>
+                    <a href="" data-remodal-target="modal-call-back" class="btn btn-decision">Замовити відеоспостереження</a>
                 </div>
             </div>
         </div>
@@ -324,7 +340,7 @@
                     </div>
                     <div class="work__item-block">
                         <h3>Консультація</h3>
-                        <p class="text">Ви залишаете заявку на консультацію. Ми телефонуємо Вам і дізнаємось про Ваші потреби</p>
+                        <p class="text">Ви залишаете заявку на консультацію. Ми телефонуємо Вам і дізнаємось Вашу потребу</p>
                     </div>
                     <div class="number">
                         <p>1</p>
@@ -337,7 +353,7 @@
                     </div>
                     <div class="work__item-block">
                         <h3>безкоштовна розробка</h3>
-                        <p class="text">Наш спеціаліст виїжджає на об’єкт, оцінює та розробляє <b>3 варіанти</b> системи відеоспостереження</p>
+                        <p class="text">Наш спеціаліст виїжджає на об’єкт, оцінює, розробляє <b>3 варіанти</b> системи відеоспостереження</p>
                     </div>
                     <div class="number">
                         <p>2</p>
@@ -489,12 +505,218 @@
             <div class="container">
                 <img src="images/more.png" alt="">
                 <h3>дізнайтесь більше<br><span>про додаткові системи захисту</span></h3>
-                <a href="" class="btn btn-more">дізнатись більше</a>
+                <a href="" data-remodal-target="modal-call-back" class="btn btn-more">дізнатись більше</a>
             </div>
         </div>
     </section>
 
+
+    <section class="reviews">
+        <div class="container">
+            <h2>відгуки наших клієнтів</h2>
+            <div class="swiper-container reviews__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide reviews__slider-item">
+                        <div class="reviews__slider-item__img">
+                            <img src="images/reviews-1.png" alt="">
+                        </div>
+                        <div class="reviews__slider-item__text">
+                            <h3>Анжела Іванова</h3>
+                            <h4>магазин «Престиж»</h4>
+                            <p>В даному випадку не варто гнатися за дешевизною. При вирішенні питання про те, як вибрати автомобільний відеореєстратор, цей критерій є важливим. Зрозуміло, в цьому плані слід вибирати дане пристосування з роздільною здатністю FullHD або Super FullHD.</p>
+                            <p>В інтернеті на певних хостингах без праці можна знайти відео з реєстраторів. Автори викладають різні ситуації на дорогах. Як правило, вони при цьому вказують модель реєстратора.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide reviews__slider-item">
+                        <div class="reviews__slider-item__img">
+                            <img src="images/reviews-1.png" alt="">
+                        </div>
+                        <div class="reviews__slider-item__text">
+                            <h3>Анжела Іванова</h3>
+                            <h4>магазин «Престиж»</h4>
+                            <p>В даному випадку не варто гнатися за дешевизною. При вирішенні питання про те, як вибрати автомобільний відеореєстратор, цей критерій є важливим. Зрозуміло, в цьому плані слід вибирати дане пристосування з роздільною здатністю FullHD або Super FullHD.</p>
+                            <p>В інтернеті на певних хостингах без праці можна знайти відео з реєстраторів. Автори викладають різні ситуації на дорогах. Як правило, вони при цьому вказують модель реєстратора.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide reviews__slider-item">
+                        <div class="reviews__slider-item__img">
+                            <img src="images/reviews-1.png" alt="">
+                        </div>
+                        <div class="reviews__slider-item__text">
+                            <h3>Анжела Іванова</h3>
+                            <h4>магазин «Престиж»</h4>
+                            <p>В даному випадку не варто гнатися за дешевизною. При вирішенні питання про те, як вибрати автомобільний відеореєстратор, цей критерій є важливим. Зрозуміло, в цьому плані слід вибирати дане пристосування з роздільною здатністю FullHD або Super FullHD.</p>
+                            <p>В інтернеті на певних хостингах без праці можна знайти відео з реєстраторів. Автори викладають різні ситуації на дорогах. Як правило, вони при цьому вказують модель реєстратора.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper--prev"></div>
+                <div class="swiper--next"></div>
+                <div class="swiper-pagination swiper-pagination-bullets"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="form-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6 form-container__item1">
+                    <h2 class="headline">В Чернівецькій області за <span style="">2015</span> рік скоєно <span style="">3571</span> правопорушення проти власності.</h2> <h2 class="headline headline2">Забезпечте захист Вашого майна!</h2>
+                    <div class="timer-block">
+                        <h3><span>Замовте безкоштовну консультацію</span> вже сьогодні та отримайте налаштування відеоспостереження через інтернет</h3>
+                        <p class="gift">в подарунок</p>
+                        <p class="shares">до кінця акції залишилось:</p>
+                        <div class="timer">
+                            <script src="http://megatimer.ru/s/294f60116c7580e8ac1cc1f0a0954918.js"></script>
+                            <ul>
+                                <li>годин</li>
+                                <li>хвилин</li>
+                                <li>секунд</li>
+                            </ul>
+                        </div>
+                        
+                        <img src="images/timer-img.png" alt="">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 form-container__item2">
+                    <h4>Замовте безкоштовну консультацію</h4>
+                    <p>та отримайте безкоштовну консультацію нашого спеціаліста протягом 15 хв.</p>
+                    <form action="mail.php" method="post" class="main-form" name="main-form">
+                                
+                        <!-- Hidden Required Fields -->
+                        <input type="hidden" name="project_name" value=".....">
+                        <input type="hidden" name="admin_email" value="@gmail.com">
+                        <input type="hidden" name="form_subject" value="Заявка с лэндинга">
+                        <input type="hidden" name="whatform" value="Модальная форма - Заявка">
+                        <!-- END Hidden Required Fields -->
+
+                        <div class="input-group">
+                            <input type="text" name="name" class="input" placeholder="Ваше ім’я" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="phone" class="input in-phone" placeholder="Ваш телефон" required>
+                        </div>
+
+                        <input type="hidden" name="whatform" value="Модальная форма - Заказ звонка">
+
+                        <button type="submit" name="submit" class="btn btn-orange btn-form">Отримати консультацію</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="find">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 hidden-xs hidden-sm col-md-6 col-lg-7 find__item">
+                    <div class="find__item-map">
+                        <div class="overlay" onClick="style.pointerEvents='none'"></div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4731.050195551733!2d25.978144070834155!3d48.27953260267283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473409181949ad81%3A0x222f805a8ee60a2f!2z0LLRg9C7LiDQoNGD0YHRjNC60LAsIDIxOdCVLCDQp9C10YDQvdGW0LLRhtGWLCDQp9C10YDQvdGW0LLQtdGG0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA1ODAwMA!5e0!3m2!1sru!2sua!4v1463133776211" width="100%" height="100%" frameborder="0" style="border: 3px solid #fc9401" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-xs-12  col-md-6 col-lg-5 find__item">
+                    <div class="find__item-mail">
+                        <h2>як нас знайти</h2>
+                        <ul class="mail">
+                            <li class="mail__first"><span>Адреса</span>Чернівці, вул. Руська, 219Е</li>
+                            <li class="mail__second"><span>Телефони</span>(099) 200-75-44, (067) 200-76-44</li>
+                            <li class="mail__three"><span>Пошта</span><a href="mailto:oleg.r@i.ua" class="">oleg.r@i.ua</a></li>
+                        </ul>
+                        <ul class="gallery">
+                            <li class="gallery__first"><a href="#" data-remodal-target="gallery-1" class=""><img src="images/gallery-1.jpg" alt=""></a></li>
+                            <li class="gallery__second"><a href="#" data-remodal-target="gallery-2" class=""><img src="images/gallery-2.jpg" alt=""></a></li>
+                            <li class="gallery__three"><a href="#" data-remodal-target="gallery-3" class=""><img src="images/gallery-3.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 hidden-md hidden-lg find__item">
+                    <div class="find__item-map">
+                    <!-- Load Scripts -->
+                        <div class="overlay2" onClick="style.pointerEvents='none'"></div>
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4731.050195551733!2d25.978144070834155!3d48.27953260267283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473409181949ad81%3A0x222f805a8ee60a2f!2z0LLRg9C7LiDQoNGD0YHRjNC60LAsIDIxOdCVLCDQp9C10YDQvdGW0LLRhtGWLCDQp9C10YDQvdGW0LLQtdGG0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA1ODAwMA!5e0!3m2!1sru!2sua!4v1463133776211" width="100%" height="100%" frameborder="0" style="border: 3px solid #fc9401" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="footer">
+        <div class="container">
+            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-6 footer__logo">
+                <a href="index.html" class="logo logo2"><img src="images/logo.png" alt="logo"></a>
+                <p>Системи відеоспостереження<br> в Чернівецькій області під ключ.</p>
+            </div>
+            <div class="col-xs-12 col-md-3 col-lg-3 footer__item">
+                <p>Всі права захищено<br>© 2016. Bezpekacenter</p>
+            </div>
+            <div class="col-xs-12 col-lg-3 footer__studio">
+                <p class="studio">Проект розроблений в студії <br>інтернет-маркетингу з душою і стилем <br><a href="http://morkov.com.ua/"><img src="images/morkov.png" alt=""></a></p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <div data-remodal-id="gallery-1" class="remodal gallery-remodal">
+        <img src="images/gallery-big-1.jpg"  alt="gallery-big-1">
+        <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+    </div>
+    <div data-remodal-id="gallery-2" class="remodal gallery-remodal">
+        <img src="images/gallery-big-2.jpg"  alt="gallery-big-2">
+        <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+    </div>
+    <div data-remodal-id="gallery-3" class="remodal gallery-remodal">
+        <img src="images/gallery-big-3.jpg"  alt="gallery-big-3">
+        <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+    </div>
+
+        <!-- modal-call-back -->
+
+    <div class="remodal  remodal-first" data-remodal-id="modal-call-back"> 
+        <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+        <h3 class="headline">Заповніть форму</h3>
+        <p>і наш менеджер зателефонує Вам на протязі 5 хв.</p>
+        <form action="mail.php" method="post" class="main-form" name="top-form">
+                    
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="">
+                    <input type="hidden" name="admin_email" value="@gmail.com">
+                    <input type="hidden" name="form_subject" value="Заявка с лэндинга">
+                    <input type="hidden" name="whatform" value="Модальная форма - Заказ звонка">
+                    <!-- END Hidden Required Fields -->
+
+                    <div class="input-group">
+                        <input type="text" name="name" class="input" placeholder="Ваше ім'я" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="phone" class="input in-phone" placeholder="Ваш телефон" required>
+                    </div>
+
+                    <button type="submit" name="submit" class="btn btn-form">Замовити виклик</button>        
+        </form>
+    </div>
+
+    <!-- modal-thanks -->
+
+    <div class="remodal remodal-common" data-remodal-id="modal-thanks">
+
+        <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+        <img src="images/ok.png" alt="">
+        <h3>Спасибі</h3>
+        <h4>за вашу заявку</h4>
+        <p>Наш менеджер зв'яжеться з <br>Вами у найближчий час</p>
+    </div>
 	
+
+
 	<!-- Load Scripts -->
 	<script src="libs/jquery.min.js"></script>
     <script src="libs/remodal.min.js"></script>
@@ -502,6 +724,69 @@
     
     <script src="libs/jquery.maskedinput.js"></script>
     
+    <script>
+        var swiper = new Swiper('.reviews__slider', {
+            
+            nextButton: '.swiper--next',
+            prevButton: '.swiper--prev',
+             pagination: '.swiper-pagination',
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            spaceBetween: 20,
+            
+            speed: 600,
+            loop: true,
+            simulateTouch: false,
+            paginationClickable: true
+           
+            
+
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('.overlay').click(function() {
+                $(this).remove();
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('.overlay2').click(function() {
+                $(this).remove();
+            });
+        });
+    </script>
+
+
+    <script>
+        jQuery(function($){
+           $(".in-phone").mask("+380999999999");
+        });
+    </script>
+
+
+    <script>
+        $(".main-form").submit(function() { //Change
+        var th = $(this);
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //Change
+            data: th.serialize()
+        }).done(function() {
+            var inst = $('[data-remodal-id=modal-thanks]').remodal();
+            inst.open();
+            
+            setTimeout(function() {
+                // Done Functions
+                th.trigger("reset");
+            }, 1000);
+        });
+        return false;
+    });
+    </script>
     
 	
 
