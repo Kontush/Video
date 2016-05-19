@@ -161,10 +161,16 @@
 .remodal-common {
     padding-top: 65px;
     text-align: center;
-    width: 485px;
+  
     height: 325px;
     background: #a9a9a9;
     border-radius: 5px;
+    @media @mobile {
+         width: 300px !important;     
+    }
+    @media @tablet {
+         width: 485px !important;
+    }
     
     h3 {
         font-size: 42px;
@@ -176,6 +182,7 @@
         font-weight: 700;
         color: #fff;
         margin-bottom: 30px;
+        text-transform: uppercase;
     }
     p {
         font-size: 31px;

@@ -1,16 +1,24 @@
 .reviews {
-    padding: 50px 0 90px;
+    padding: 50px 0 25px;
     background: #dddede;
+    h2 {
+        @media @mobile {
+            font-size: 25px;
+        }
+        @media @tablet { 
+            font-size: 50px;
+        }
+    }
     &__slider {
         
         @media @mobile {
-            height: 486px;  
+            height: 595px;  
         }
         @media @tablet {  
-            height: 330px; 
+            height: 402px; 
         }
         @media @desktop { 
-            height: 385px; 
+            height: 495px; 
         }
     }
     &__slider-item {
@@ -112,8 +120,11 @@
                     font-size: 12px;
                 }
                 @media @desktop {  
-                    font-size: 16px;
+                    font-size: 15px;
                     margin-bottom: 5px;
+                }
+                @media @desktop-xl {  
+                    font-size: 16px;
                 }
             }
 

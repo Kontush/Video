@@ -8,7 +8,7 @@
     
     }
     @media @tablet {  
-    background: url('@{dir}after-header-bg.jpg') no-repeat top center;
+        background: url('@{dir}after-header-bg.jpg') no-repeat top center;
     }
     .container {
         position: relative;
@@ -20,15 +20,27 @@
         &__item {
             display: inline-block;
             width: 40px;
-            height: 26px;
-            font-size: 18px;
+            
             color: #fc9401;
             text-align: center;
             border-radius: 20px;
+            @media @mobile {
+                font-size: 15px;
+                height: 24px;
+            }
+            @media @tablet {  
+                font-size: 18px;
+                height: 26px;
+            }
         }
         .active {
             color: #fff;
             background: #fc9401;
+        }
+        .notactive {
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
    &__img {

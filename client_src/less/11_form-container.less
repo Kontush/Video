@@ -5,6 +5,7 @@
         h2 {
             font-weight: 700;
             text-transform: uppercase;
+            line-height: 1.4;
             
             @media @mobile {
                 font-size: 13px;
@@ -23,7 +24,7 @@
             
             span {
                 
-                line-height: 1.1;
+                line-height: 0.7;
                 @media @mobile {
                     font-size: 25px;
                 }
@@ -86,14 +87,14 @@
             
             border: 5px solid #f08600;
             
-            padding: 15px 17px;
+            padding: 15px 15px;
             @media @mobile {
                 width: 320px;
                 margin: 0 auto;
                 margin-top: 30px;
             }
             @media @tablet { 
-                width: 503px;
+                width: 509px;
                 margin: 0 auto;
                 margin-top: 50px;
                 margin-bottom: 20px;
@@ -105,7 +106,10 @@
                 margin-bottom: 0px;
             }
             @media @desktop-xl {  
-                width: 503px;
+                width: 509px;
+            }
+            &__header {
+                margin-bottom: 25px;
             }
             h3 {
                 
@@ -156,21 +160,116 @@
                 font-weight: 500;
                 text-transform: uppercase;
             }
+            
+            #timer-number-8553f0c691840924e6264f6c0dd8215e, #timer-number-8553f0c691840924e6264f6c0dd8215e0 {
+                &-days {
+                    @media @mobile {
+                        font-size: 53px !important;
+                    }
+                    @media @tablet { 
+                        font-size: 70px !important;
+                    }
+                }
+                &-hours {
+                    @media @mobile {
+                        font-size: 53px !important;
+                    }
+                    @media @tablet { 
+                        font-size: 70px !important;
+                    }
+                }
+                &-minutes {
+                    @media @mobile {
+                        font-size: 53px !important;
+                    }
+                    @media @tablet { 
+                        font-size: 70px !important;
+                    }
+                }
+                &-secundes {
+                    @media @mobile {
+                        font-size: 53px !important;
+                    }
+                    @media @tablet { 
+                        font-size: 70px !important;
+                    }
+                }
+            }
+            #timer-separator-8553f0c691840924e6264f6c0dd8215e, #timer-separator-8553f0c691840924e6264f6c0dd8215e0 {
+                &-days {
+                    @media @mobile {
+                        font-size: 53px !important;
+                    }
+                    @media @tablet { 
+                        font-size: 70px !important;
+                    }
+                }
+                &-hours {
+                    @media @mobile {
+                        font-size: 53px !important;
+                    }
+                    @media @tablet { 
+                        font-size: 70px !important;
+                    }
+                }
+                &-minutes {
+                    @media @mobile {
+                        font-size: 53px !important;
+                    }
+                    @media @tablet { 
+                        font-size: 70px !important;
+                    }
+                }
+                &-secundes {
+                    @media @mobile {
+                        font-size: 53px !important;
+                    }
+                    @media @tablet { 
+                        font-size: 70px !important;
+                    }
+                }
+            }
             .timer {
-                #timer294f60116c7580e8ac1cc1f0a0954918, #timer294f60116c7580e8ac1cc1f0a09549180 {
+                #timer8553f0c691840924e6264f6c0dd8215e, #timer8553f0c691840924e6264f6c0dd8215e0 {
                     text-align: left !important;
+                    @media @mobile {
+                        min-width: 300px !important; 
+                        height: 50px !important;
+                    }
+                    @media @tablet { 
+                        min-width: 392px !important;  
+                        height: 70px !important;  
+                    }
+                    .timer-separator {
+                        @media @mobile {
+                            font-size: 53px !important;
+                        }
+                        @media @tablet { 
+                            font-size: 70px !important;
+                        }
+                    }
+                    
+                }
+
+                ul {
+                    margin-left: 10px;
                 }
                 li {
                     display: inline-block;
                     vertical-align: top;
-                    font-size: 18px;
+                    
                     font-weight: 500;
                     
                     @media @mobile {
-                        margin-right: 31px;
+                        margin-right: 25px;  
+                        font-size: 14px; 
                     }
-                    @media @desktop-xl {  
+                    @media @desktop-xl {    
+                        font-size: 18px;    
                         margin-right: 33px;
+                    }
+                    &:last-child {
+                        margin-right: 0px;
                     }
                 }
                 
@@ -238,7 +337,7 @@
             
             font-weight: 400;
             color: #fff;
-            margin-bottom: 15px;
+            margin-bottom: 35px;
             @media @mobile {
                 font-size: 15px;
             }
@@ -340,15 +439,17 @@
             
             font-weight: 700;
             margin: 0 auto;
-            margin-top: 40px;
+            
             &:hover {
                 background-image: linear-gradient(to bottom, rgba(0,0,0,.15), rgba(255,255,255,.15));
             }
             @media @mobile {
                 font-size: 18px;
                 width: 300px;
+                margin-top: 30px;
             }
             @media @tablet { 
+                margin-top: 57px;
                 font-size: 21px;
                 width: 354px;
             }
